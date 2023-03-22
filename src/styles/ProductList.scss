@@ -1,0 +1,27 @@
+@use "./vars";
+
+.cards-container {
+    display: grid;
+    --card-size: 24rem;
+    /*Con la siguiente linea hacemos que el GRID
+    se repita indefinidamente segun el número de
+    árticulos, cada CASILLA DEL GRID
+    , tentra un 
+    tamaño de 24*24rem*/
+    grid-template-columns: repeat(auto-fill, var(--card-size));
+
+    /*Espacio entre las CASILLAS DEL GRID*/
+    gap: 2.6rem;
+
+    /*Centramos el contenido horizontalmente*/
+    place-content: center;
+
+    margin: 2rem 0;
+}
+
+@media (max-width: 640px){
+    .cards-container {
+        --card-size: 14rem;
+    }
+
+}

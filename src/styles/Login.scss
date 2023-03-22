@@ -1,85 +1,92 @@
 @use "./vars";
 
-.login {
+.content {
     width: 100%;
     height: 100vh;
-    /*Esta propiedad de grid centra vertical y horizontalmente*/
     display: grid;
     place-items: center;
 }
 
-.form-container {
+.login-container {
     display: grid;
-    grid-template-rows: auto 1fr auto; /*Divide todo en filas individuales*/
-    width: 30rem; /*Ancho del contenedor principal*/
+    grid-template-rows: auto 1fr auto;
+    width: 30rem;
 }
 
-.logo {
+.login-container .logo {
     width: 15rem;
     margin-bottom: 4.8rem;
     justify-self: center;
-    display: none; /*Para que no aparezca en escritorio por default*/
+    display: none;
 }
 
-.title {
-    font-size: var(--large-font);
-    margin-bottom: 1.2rem;
-    text-align: center;
-}
-
-.subtitle {
-    color: var(--black);
-    font-size: var(--med-font);
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 3.2rem;
-    text-align: center;
-}
-
-.form {
-    /*Para que los textos y casillas estén de forma vertical*/
+.login-container .form {
     display: flex;
     flex-direction: column;
 }
 
-.label {
+.login-container .label {
+    color: var(--black);
     font-size: var(--small-font);
     font-weight: bold;
     margin-bottom: 0.4rem;
 }
 
-.input {
+.login-container .input{
     background-color: var(--text-input-field);
-    /*Quitamos el borde por default de los inputs, y lo redondeamos*/
     border: none;
-    border-radius: 0.8rem;
+    color: var(--black);
+    font-size: var(--small-font);
+    font-family: 'Quicksand', sans-serif;
     height: 3rem;
-    font-size: var(--med-font);
     padding: 0.6rem;
     margin-bottom: 1.2rem;
-}
-
-.primary-button {
-    background-color: var(--hospital-green);
     border-radius: 0.8rem;
-    border: none;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--med-font);
-    font-weight: bold;
-    height: 5rem;
 }
 
-.login-button {
+.login-container .input-email {
+    margin-bottom: 2.2rem;
+}
+
+.login-container .login-button {
+    background-color: var(--hospital-green);
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--white);
+    font-size: var(--small-font);
+    font-weight: bold;
+    border-radius: 0.8rem;
+    height: 5rem;
     margin-top: 1.4rem;
     margin-bottom: 3rem;
 }
 
-/*La imagen del logo seguira apareciendo hasta
-los 640px*/
-@media (max-width: 640px){
-    .logo {
+.login-container .form a {
+    text-align: center;
+    font-size: var(--small-font);
+    color: var(--hospital-green);
+    text-decoration: none;
+    margin-bottom: 5.2rem;
+}
+
+.login-container .primary-button {
+    background-color: var(--white);
+    border: 0.1rem solid var(--hospital-green);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--hospital-green);
+    font-size: var(--small-font);
+    font-weight: bold;
+    border-radius: 0.8rem;
+    width: inherit;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+
+    .login-container .logo {
         display: block;
     }
 }
