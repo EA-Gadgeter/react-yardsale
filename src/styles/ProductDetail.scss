@@ -1,6 +1,6 @@
 @use "./vars";
 
-.product-detailed {
+.ProductDetail {
     width: 36rem;
     padding-bottom: 2.4rem;
 
@@ -12,7 +12,7 @@
 
 /*Creamos el boton de blanco redondo y usamos position absoluto para pocionarlo
 en la esquina superior izquierda*/
-.product-detailed-close {
+.ProductDetail .product-detailed-close {
     background: var(--white);
     width: 1.4rem;
     height: 1.4rem;
@@ -23,13 +23,13 @@ en la esquina superior izquierda*/
     border-radius: 50%;
 }
 
-.product-detailed-close:hover {
+.ProductDetail .product-detailed-close:hover {
     cursor: pointer;
 }
 
 /*La imagen abarcara todo el ancho del contenedor
 y usamos le damos border solo en la partde de abajo*/
-.product-detailed > img:nth-child(2) {
+.ProductDetail > img:nth-child(2) {
     width: 100%;
     height: 36rem;
     border-radius: 0 0 2rem 2rem;

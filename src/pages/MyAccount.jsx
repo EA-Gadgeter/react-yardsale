@@ -4,7 +4,7 @@ import "../styles/MyAccount.scss";
 
 const MyAccount = () => {
   return (
-    <div className="my-account">
+    <div className="MyAccount">
         <div className="form-container">
             <h1 className="title">My account</h1> 
             <form className="form">

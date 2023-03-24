@@ -4,7 +4,7 @@ import "../styles/SendEmail.scss";
 
 const SendEmail = () => {
   return (
-    <div className="content">
+    <div className="SendEmail">
         <div className="advise-container">
             <img src="../logos/logo_yard_sale.svg" alt="logo" className="logo" />
             <h1 className="title">Email has been sent!</h1>

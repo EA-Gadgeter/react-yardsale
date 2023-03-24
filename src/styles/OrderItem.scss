@@ -1,7 +1,7 @@
 @use "./vars";
 
 /*Es cada uno de los productos de la orden*/
-.shopping-cart {
+.OrderItem {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 1.6rem;
@@ -11,11 +11,11 @@
     align-items: center;
 }
 
-.shopping-cart figure {
+.OrderItem figure {
     margin: 0;
 }
 
-.shopping-cart figure img{
+.OrderItem figure img{
     width: 7rem;
     height: 7rem;
     border-radius: 2rem;
@@ -25,17 +25,17 @@
 }
 
 /*El segundo hijo que DEBE ser p*/
-.shopping-cart p:nth-child(2) {
+.OrderItem p:nth-child(2) {
     color: var(--very-light-pink);
     font-size: var(--small-font);
 }
 
 /*El tercer hijo que DEBE ser p*/
-.shopping-cart p:nth-child(3) {
+.OrderItem p:nth-child(3) {
     font-size: var(--med-font);
     font-weight: bold;
 }
 
-.shopping-cart img:last-child:hover {
+.OrderItem img:last-child:hover {
     cursor: pointer;
 }

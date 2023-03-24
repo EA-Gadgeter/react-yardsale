@@ -1,33 +1,33 @@
 @use "./vars";
 
-.content {
+.SendEmail {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 6.1rem);
     display: grid;
     place-items: center;
 }
 
-.advise-container {
+.SendEmail .advise-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 35rem;
     justify-items: center;
 }
 
-.logo {
+.SendEmail .logo {
     width: 15rem;
     margin-bottom: 4.8rem;
     justify-self: center;
     display: none;
 }
 
-.title {
+.SendEmail .title {
     text-align: center;
     font-size: var(--large-font);
     margin-bottom: 1.2rem;
 }
 
-.subtitle {
+.SendEmail .subtitle {
     text-align: center;
     font-size: var(--large-font);
     color: var(--black);
@@ -35,7 +35,7 @@
     margin-bottom: 3rem;
 }
 
-.email-icon {
+.SendEmail .email-icon {
     width: 13.2rem;
     height: 13.2rem;
     border-radius: 50%;
@@ -47,11 +47,11 @@
     margin-bottom: 2.4rem;
 }
 
-.email-icon img {
+.SendEmail .email-icon img {
     width: 8rem;
 }
 
-.primary-button {
+.SendEmail .primary-button {
     background-color: var(--hospital-green);
     border: none;
     font-family: 'Quicksand', sans-serif;
@@ -66,18 +66,19 @@
     margin-bottom: 3rem;
 }
 
-footer span {
+.SendEmail footer span {
     font-size: var(--small-font);
     margin-right: 0.5rem;
 }
-footer a {
+
+.SendEmail footer a {
     font-size: var(--small-font);
     color: var(--hospital-green);
     margin-top: 1.4rem;
 }
 
 @media (max-width: 640px){
-    .logo {
+    .SendEmail .logo {
         display: block;
     }
 }

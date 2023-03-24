@@ -4,7 +4,7 @@ import "../styles/Login.scss";
 
 const Login = () => {
   return (
-    <div className="content">
+    <div className="Login">
         <div className="login-container">
             <img src="../logos/logo_yard_sale.svg" alt="logo" className="logo" />
             <form className="form">

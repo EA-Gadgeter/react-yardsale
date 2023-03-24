@@ -6,7 +6,7 @@ import "../styles/ProductDetail.scss";
 
 const ProductDetail = () => {
   return (
-    <aside className="product-detailed">
+    <aside className="ProductDetail">
         <div className="product-detailed-close">
             <img src="../icons/icon_close.png" alt="close" />
             <ProductInfo />

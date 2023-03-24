@@ -1,6 +1,6 @@
 @use "./vars";
 
-.product-details {
+.MyOrder {
     background-color: var(--white);
     width: 36rem;
     padding: 2.4rem;
@@ -9,27 +9,27 @@
     box-sizing: border-box;
 }
 
-.title-container {
+.MyOrder .title-container {
     display: flex;
 }
 
-.title-container img {
+.MyOrder .title-container img {
     transform: rotate(180deg);
     margin-right: 1.4rem;
 }
 
-.title {
+.MyOrder .title {
     font-size: var(--large-font);
     font-weight: bold;
 }
 
-.my-order-content {
+.MyOrder .my-order-content {
     /*Nos permite poner todo de manera vertical*/
     display: flex;
     flex-direction: column;
 }
 
-.order {
+.MyOrder .order {
     display: grid;
     grid-template-columns: auto 1fr;
 
@@ -46,7 +46,7 @@
 }
 
 /*Aplica los estilos al primer parrafo dentro de la clase*/
-.order p:nth-child(1){
+.MyOrder .order p:nth-child(1){
     /*Ponemos en vertical la fecha y el numero de articulos de la arden*/
     display: flex;
     flex-direction: column;
@@ -54,25 +54,25 @@
 
 /*Dentro de las etiqueta p, el primer hijo que DEBE ser span
 la fecha de compra de la orden*/
-.order p span:first-child {
+.MyOrder .order p span:first-child {
     font-size: var(--med-font);
     font-weight: bold;
 }
 
 /*Dentro de las etiqueta p, el hijo numero 2 que debe ser span*/
-.order p span:nth-child(2) {
+.MyOrder .order p span:nth-child(2) {
     font-size: var(--small-font);
     color: var(--very-light-pink);
 }
 
 /*El hijo número 2 que DEBE ser p, que es el precio de la compra*/
-.order p:nth-child(2){
+.MyOrder .order p:nth-child(2){
     text-align: end;
     font-size: var(--med-font);
     font-weight: bold;
 }
 
-.primary-button {
+.MyOrder .primary-button {
     background-color: var(--hospital-green);
     border-radius: 0.8rem;
     border: none;

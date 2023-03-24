@@ -6,7 +6,7 @@ import Menu from "../components/Menu";
 
 const Checkout = () => {
   return (
-    <div className="my-order">
+    <div className="Checkout">
         <div className="my-order-container">
             <h1 className="title">My order</h1>
             <div className="my-order-content">

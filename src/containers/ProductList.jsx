@@ -6,7 +6,7 @@ import "../styles/ProductList.scss";
 
 const ProductList = () => {
   return (
-    <section className="main-container">
+    <section className="ProductList">
         <div className="cards-container">
             <ProductItem />
             <ProductItem />

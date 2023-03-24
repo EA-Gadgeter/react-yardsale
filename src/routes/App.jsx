@@ -11,8 +11,10 @@ import NotFound from "../pages/NotFound";
 import NewPassword from "../pages/NewPassword";
 import Checkout from "../pages/Checkout";
 import Orders from "../pages/Orders";
+import PasswordRecovery from "../pages/PasswordRecovery";
 
 import "../styles/global.css";
+import CreateAccount from "../pages/CreateAccount";
 
 const App = () => {
   return (
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/new-password" element={<NewPassword />}/>
           <Route path="/checkout" element={<Checkout />}/>
           <Route path="/orders" element={<Orders />}/>
+          <Route path="/password-recovery" element={<PasswordRecovery />}/>
+          <Route path="/create-account" element={<CreateAccount />}/>
           <Route path="*" element={<NotFound />}/>
         </Routes>
       </Layout>

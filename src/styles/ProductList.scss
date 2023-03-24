@@ -1,6 +1,6 @@
 @use "./vars";
 
-.cards-container {
+.ProductList .cards-container {
     display: grid;
     --card-size: 24rem;
     /*Con la siguiente linea hacemos que el GRID
@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 640px){
-    .cards-container {
+    .ProductList .cards-container {
         --card-size: 14rem;
     }
 
