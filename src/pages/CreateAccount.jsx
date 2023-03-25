@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/CreateAccount.scss";
+import "@styles/CreateAccount.scss";
 
 const CreateAccount = () => {
   return (
@@ -10,9 +10,9 @@ const CreateAccount = () => {
             <form className="form">
                 <div>
                     <label className="label">Name</label>
-                    <input type="text" id="name" placeholder="Teff" className="input input-name" />
+                    <input type="text" id="name" placeholder="Emiliano Acevedo" className="input input-name" />
                     <label className="label">Email</label>
-                    <input type="text" id="email" placeholder="platzi@example.com" className="input input-email" />
+                    <input type="text" id="email" placeholder="ejemplo@gmail.com" className="input input-email" />
                     <label className="label">Password</label>
                     <input type="password" id="password" placeholder="*********" className="input input-password" />
                 </div>

@@ -1,15 +1,19 @@
 import React from "react";
 
-import "../styles/Header.scss";
+import "@styles/Header.scss";
+
+import menu from "@icons/icon_menu.svg";
+import logo from "@logos/logo_yard_sale.svg";
+import shoppingCart from "@icons/icon_shopping_cart.svg"
 
 const Header = () => {
   return (
     <nav>
         {/*Imagen del menu, principal mente para mobile*/}
-        <img src="../icons/icon_menu.svg" alt="menu-icon" className="menu" />
+        <img src={menu} alt="menu-icon" className="menu" />
 
         <div className="nav-bar-left">
-            <img src="../logos/logo_yard_sale.svg" alt="logo" className="logo" />
+            <img src={logo} alt="logo" className="logo" />
 
             {/*Dividimos la barra en 2 partes, la derecha y la izquierda
             usamos una lista y a ya que recordemos que nos llevaran a
@@ -29,7 +33,7 @@ const Header = () => {
             <ul>
                 <li className="nav-bar-email">example@gmail.com</li>
                 <li className="nav-shopping-cart">
-                    <img src="../icons/icon_shopping_cart.svg" alt="shopping cart" />
+                    <img src={shoppingCart} alt="shopping cart" />
                     {/*Colocamos el numero en un div por separado, para poder crear el circulo que
                     lo contiene en el estilo*/}
                     <div>2</div>
