@@ -1,12 +1,26 @@
 @use "./vars";
 
+@keyframes swipeLeft{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 36.2rem;
+    }
+}
+
 .MyOrder {
     background-color: var(--white);
-    width: 36rem;
+    width: 36.2rem;
     padding: 2.4rem;
     position: absolute;
     right: 0;
+    bottom: auto;
+    top: 6rem;
+    border-bottom-left-radius: 0.6rem;
+    border: 0.1rem solid var(--very-light-pink);
     box-sizing: border-box;
+    animation: swipeLeft 0.26s ease;
 }
 
 .MyOrder .title-container {
