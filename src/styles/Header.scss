@@ -14,7 +14,7 @@ nav {
 
 /*La imagen del toogle del menu es algo solo de mobile, por lo que por defecto
 la desactivamos para desktop*/
-nav .menu{
+nav .menu {
     display: none;
 }
 
@@ -111,6 +111,7 @@ nav .nav-shopping-cart div {
 @media (max-width: 640px) {
     nav .menu {
         display: block;
+        position: relative;
     }
 
     nav .nav-bar-left ul{

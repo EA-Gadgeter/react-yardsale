@@ -47,3 +47,13 @@
     color: var(--hospital-green);
     font-size: var(--small-font);
 }
+
+.desktop-menu {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .desktop-menu {
+        display: none;
+    }
+}
