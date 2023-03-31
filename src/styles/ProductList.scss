@@ -16,7 +16,8 @@
     /*Centramos el contenido horizontalmente*/
     place-content: center;
 
-    margin: 2rem 0;
+    margin-top: calc(2rem + 6rem);
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 640px){

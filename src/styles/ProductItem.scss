@@ -29,10 +29,19 @@ para evitar problemas*/
 }
 
 .ProductItem .product-info figure img {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
+
+    box-shadow: 0 0 3px 0.5px var(--very-light-pink);
 
     cursor: pointer;
+}
+
+.ProductItem .product-info figure:hover img {
+    border-radius: 50%;
+    box-shadow: 0 0 2px 1px var(--hospital-green),
+    0 0 4px 1px var(--hospital-green),
+    0 0 8px 1px var(--hospital-green);
 }
 
 /*El primer párrafo dentro de un div*/

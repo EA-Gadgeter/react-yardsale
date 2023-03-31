@@ -6,7 +6,7 @@ const useGetProducts = (API) => {
 
     useEffect(() => {
         axios(API)
-        .then((response => setProducts(response.data)))
+        .then((response => setProducts(response.data)));
     }, []);
 
     return products;

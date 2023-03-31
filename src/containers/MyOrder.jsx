@@ -8,7 +8,7 @@ import "@styles/MyOrder.scss";
 
 import flechita from "@icons/flechita.svg";
 
-const MyOrder = () => {
+const MyOrder = ({ setToggleOrder }) => {
     const { state: { cart } } = useContext(AppContext);
 
     const totalPrice = () => {
@@ -19,26 +19,29 @@ const MyOrder = () => {
         return newPrice;
     };
 
+    const handleToggle = () => {
+        setToggleOrder(false);
+    };
+
   return (
     <aside className="MyOrder">
         <div className="title-container">
-            <img src={flechita} alt="arrow" className="arrow" />
+            <img src={flechita} alt="arrow" className="arrow" onClick={handleToggle}/>
             <p className="title">Shopping cart</p>
         </div>
 
         <div className="my-order-content">
             {cart.map((product, index) => {
-                return <OrderItem key={index} indexValue={index} product={product}/>
-            })}
-            
-            <div className="order">
+                return <OrderItem key={index} product={product}/>
+            })} 
+        </div>
+        <div className="order">
                 <p>
                     <span>Total</span>
                 </p>
                 <p>
                     ${totalPrice()}
                 </p>
-            </div>
         </div>
         <button className="primary-button">Checkout</button>
     </aside>

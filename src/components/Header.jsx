@@ -16,7 +16,7 @@ const Header = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const [toggleOrder, setToggleOrder] = useState(false);
 
-    const { state: { cart } } = useContext(AppContext);
+    const { state: { cart } } = useContext(AppContext);
 
     const handleToggleMenu = () => {
         setToggleMenu(!toggleMenu);
@@ -62,7 +62,7 @@ const Header = () => {
             </ul>
         </div>
         {toggleMenu && <Menu />}
-        {toggleOrder && <MyOrder />}
+        {toggleOrder && <MyOrder setToggleOrder={setToggleOrder} />}
     </nav>
   )
 }

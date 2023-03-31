@@ -12,6 +12,7 @@
 .MyOrder {
     background-color: var(--white);
     width: 36.2rem;
+    max-height: calc(100vh - 6.1rem);
     padding: 2.4rem;
     position: absolute;
     right: 0;
@@ -30,6 +31,7 @@
 .MyOrder .title-container img {
     transform: rotate(180deg);
     margin-right: 1.4rem;
+    cursor: pointer;
 }
 
 .MyOrder .title {
@@ -41,6 +43,13 @@
     /*Nos permite poner todo de manera vertical*/
     display: flex;
     flex-direction: column;
+
+    max-height: calc(65vh - 6.1rem);
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    padding-right: 1.5rem; 
+    box-sizing: border-box;
 }
 
 .MyOrder .order {
@@ -54,6 +63,7 @@
     align-items: center;
 
     background-color: var(--text-input-field);
+    margin-top: 1.8rem;
     margin-bottom: 2.5rem;
     border-radius: 0.8rem;
     padding: 0 2.4rem;

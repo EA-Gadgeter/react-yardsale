@@ -6,11 +6,11 @@ import "@styles/OrderItem.scss";
 
 import iconClose from "@icons/icon_close.png";
 
-const OrderItem = ({ product, indexValue }) => {
+const OrderItem = ({ product }) => {
   const { removeFromCart } = useContext(AppContext);
 
   const handleClick = () => {
-    removeFromCart(indexValue);
+    removeFromCart(product.id);
   }
 
   return (
