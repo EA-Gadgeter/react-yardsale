@@ -1,0 +1,14 @@
+{
+    "rewrites":  [
+      {"source": "/", "destination": "/"},
+      {"source": "/login", "destination": "/"},
+      {"source": "/send-email", "destination": "/"},
+      {"source": "/my-account", "destination": "/"},
+      {"source": "/new-password", "destination": "/"},
+      {"source": "/checkout", "destination": "/"},
+      {"source": "/orders", "destination": "/"},
+      {"source": "/password-recovery", "destination": "/"},
+      {"source": "/create-account", "destination": "/"}
+    ]
+}
+  

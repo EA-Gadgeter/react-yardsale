@@ -45,7 +45,7 @@ const Header = () => {
             <div className="nav-bar-left">
                 <img src={logo} alt="logo" className="logo" />
 
-                {/*Dividimos la barra en 2 partes, la derecha y la izquierda
+                {/*Dividimos la barra en 2 partes, la deºrecha y la izquierda
                 usamos una lista y a ya que recordemos que nos llevaran a
                 otras paginas*/}
                 <ul>
