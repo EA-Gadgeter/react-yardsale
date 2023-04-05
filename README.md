@@ -8,7 +8,7 @@ This project is the result of the [React.js Practical Course](https://platzi.com
 - The cart its fully functional, you can add and remove products from it.
 - The previous version had harcoded products, this time they come from the [Platzi Fake Store API](https://fakeapi.platzi.com/), 
   so thanks to Platzi for it.
-- There are multiple pages, feel free to visist it (also only main page is working, others are only visual):
+- There are multiple pages, feel free to visist it (although only main page is working, others are only visual):
   - login
   - send-email
   - my-account
